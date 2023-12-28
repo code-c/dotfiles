@@ -18,5 +18,8 @@ $install='sudo brew install'
 #install moitoring tools and language managers
 echo "$install btop pyenv rbenv nvm"
 
+# install my neovim dependencies (telescope.nvim and mason.nvim respectively)
+echo "$install ripgrep wget"
+
 #install fonts (NEEDS TESTING)
 # echo "brew tap homebrew/cask-fonts && brew install --cask font-lekton-nerd-font"
