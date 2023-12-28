@@ -1,40 +1,34 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator.
+# [[ Configuration for Alacritty ]]
 
+# [[ Import extraneous ]] 
+# config files like themes
 import:
-    # uncomment the flavour you want below:
     - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
-    # - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
-    # - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
-    # - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
-   
+
+
+# [[ Window Setup ]]
 env:
-  # TERM env costomization
+  # ensure to download 'extras/' to this directory
+  # and setup the appropriate config within ~/.zshrc
   TERM: alacritty
 
 window:
-  # Window dimensions (changes require restart)
+
   dimensions:
    columns: 150
    lines: 45
 
-  # Window position in pixels (changes require restart)
-  #position:
-  #  x: 0
-  #  y: 0
-
-  # Window padding
   padding:
     x: 4 
-    y: 10
+    y: 4
 
   # Spread additional padding evenly around the terminal content.
-  #dynamic_padding: true
+  dynamic_padding: true
 
-  # Window decorations
-  # MacOS extraneous values for `decorations`: transparent, buttonless
+  # Window decorations (currently MacOS only)
   decorations: full
-  opacity: 1.0
-  startup_mode: Windowed
+  opacity: 0.95
+  startup_mode: SimpleFullscreen
 
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
@@ -42,35 +36,25 @@ window:
   # Decorations theme variant
   decorations_theme_variant: Dark
 
-  resize_increments: true
 
-  # Make `Option` key behave as `Alt` (macOS only):
-  option_as_alt: Both
-
-
-# Font configuration
+# [[ Font configuration ]]
 font:
-  # The normal (roman) font face to use.
   normal:
     family: Lekton Nerd Font
     style: Regular
 
-  # The bold font face
   bold:
     family: Lekton Nerd Font
     style: Bold
 
-  # The italic font face
   italic:
     family: Lekton Nerd Font
     style: Italic
 
-  # Bold italic font face
   #bold_italic:
     #family: monospace
     #style: Bold Italic
 
-  # Point size
   size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
@@ -89,18 +73,20 @@ font:
 
   # Use built-in font for box drawing characters. If `true`, Alacritty will use a custom built-in font for box drawing
   # characters (Unicode points 2500 - 259f).
-  # builtin_box_drawing: true
+  #builtin_box_drawing: true
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Bell
-#
+
+# [[ Bell ]]
 # The bell is rung every time the BEL control character is received.
 bell:
   animation: EaseOutExpo
   duration: 0
 
+
+# [[ Selection ]]
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
@@ -109,23 +95,21 @@ selection:
   # When set to `true`, selected text will be copied to the primary clipboard.
   #save_to_clipboard: false
 
+
+# [[ Cursor Config ]]
 cursor:
-  # Cursor style
   style:
     shape: Beam
     blinking: On
 
 
-# Live config reload (changes require restart)
+# [[ Theming ]]
+# Live config reload 
 live_config_reload: true
 theme: Catppuccin
 
-# Shell
-#
-# You can set `shell.program` to the path of your favorite shell, e.g.
-# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
-# shell.
-#
+
+# [[ Shell ]]
 shell:
   program: /bin/zsh
 #  args:
