@@ -40,22 +40,22 @@ window:
 # [[ Font configuration ]]
 font:
   normal:
-    family: Lekton Nerd Font
-    style: Regular
+    family: VictorMono Nerd Font
+    style: Light
 
   bold:
-    family: Lekton Nerd Font
-    style: Bold
+    family: VictorMono Nerd Font
+    style: SemiBold
 
   italic:
-    family: Lekton Nerd Font
-    style: Italic
+    family: VictorMono Nerd Font
+    style: Light Oblique
 
-  #bold_italic:
-    #family: monospace
-    #style: Bold Italic
+  bold_italic:
+    family: VictorMono Nerd Font
+    style: SemiBold Oblique
 
-  size: 16.0
+  size: 13.5
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
