@@ -23,3 +23,6 @@ echo "$install ripgrep wget"
 
 #install fonts (NEEDS TESTING)
 # echo "brew tap homebrew/cask-fonts && brew install --cask font-lekton-nerd-font"
+
+# Install Apps and Programs
+echo "$install obsidian prusaslicer"

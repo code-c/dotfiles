@@ -42,6 +42,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
+alias get_idf='. $HOME/.config/esp/esp-idf/export.sh'
 # use config as the 'git' command for the bare git repo used for my dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -123,3 +124,12 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `pipx` on 2024-01-04 05:41:34
+export PATH="$PATH:/Users/codiecottrell/.local/bin"
+
+PATH="/Users/codiecottrell/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/codiecottrell/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/codiecottrell/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/codiecottrell/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/codiecottrell/perl5"; export PERL_MM_OPT;
